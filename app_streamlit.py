@@ -1,9 +1,14 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import urllib.request
 
 # Título do aplicativo
 st.title("🔍 Verificador de Fraudes no PIX")
+
+# Baixa o modelo do GitHub
+url_modelo = "https://raw.githubusercontent.com/SilvinhaPatty/modelo-antifraude-pix/main/modelo_random_forest_pix.pkl"
+urllib.request.urlretrieve(url_modelo, "modelo_random_forest_pix.pkl")
 
 # Carrega o modelo treinado
 with open("modelo_random_forest_pix.pkl", "rb") as f:
@@ -36,3 +41,4 @@ if st.button("Verificar Fraude"):
         st.error("🚨 Suspeita de FRAUDE detectada na transação!")
     else:
         st.success("✅ Transação considerada legítima.")
+
