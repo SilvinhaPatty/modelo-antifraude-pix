@@ -37,9 +37,12 @@ dados = {
 df = pd.DataFrame([dados])
 
 # Botão para prever
-if st.button("Verificar Fraude"):
+if modelo is None:
+    st.error("❌ O modelo não foi carregado corretamente. Verifique o download.")
+else:
     pred = modelo.predict(df)[0]
     if pred == 1:
         st.error("🚨 Suspeita de FRAUDE detectada na transação!")
     else:
         st.success("✅ Transação considerada legítima.")
+
