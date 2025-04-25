@@ -1,0 +1,8 @@
+run = "streamlit run app_streamlit.py --server.port 3000 --server.headless true"
+
+[env]
+PORT = "3000"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
