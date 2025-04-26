@@ -26,8 +26,7 @@ A transação será classificada como **fraude** se atender a uma ou mais das se
 
 - A chave já teve fraude (`chave_historico_fraude = True`)
 - Valor da transação > 2000
-- Transação entre 0h e 6h
-- Valor > 1000 **e** transação entre 0h e 6h
+- Valor > 300 **e** transação entre 0h e 6h
 
 ---
 
