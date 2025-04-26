@@ -21,7 +21,7 @@ tipos = ["corrente", "poupanca", "salario"]
 
 # 4) Layout da página
 st.set_page_config(page_title="Prevenção a Fraudes no PIX", layout="centered")
-st.title("🔒 Sistema de Prevenção a Fraudes no PIX")
+st.markdown("<h1 style='text-align:center;'>🔒Sistema de Prevenção a Fraudes no PIX</h1>", unsafe_allow_html=True)
 st.markdown("Preencha os dados da transação para verificar se será **Autorizada** ou **Não Autorizada**:")
 
 # 5) Campos de entrada
