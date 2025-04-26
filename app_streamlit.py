@@ -14,7 +14,7 @@ chaves_suspeitas = [
 ]
 
 # Título
-st.markdown("## 🛡️ Sistema de Prevenção a Fraudes no PIX")
+st.markdown("<h1 style='text-align: center;'>🛡️Prevenção de Fraudes no PIX</h1>", unsafe_allow_html=True)
 
 st.markdown("Preencha os dados da transação para verificar se será **Autorizada** ou **Não Autorizada**:")
 
